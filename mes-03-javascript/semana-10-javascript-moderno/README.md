@@ -1,35 +1,117 @@
 # Semana 10 — JavaScript Moderno
 
-## Objetivo
+## Objetivos
 
-Estudar e praticar os fundamentos relacionados a **JavaScript Moderno**, conectando o conteúdo ao desenvolvimento progressivo da carreira de Frontend Web Developer.
+Escrever JavaScript moderno, expressivo e adequado para aplicações frontend contemporâneas.
 
-## Tópicos
+Ao final desta semana, você deverá ser capaz de:
 
-- let;
-- const;
-- Arrow Functions;
-- Template Literals;
-- Destructuring;
-- Spread;
-- Rest;
+- explicar os principais conceitos com suas próprias palavras;
+- relacionar os conceitos ao estudo de caso da NexusShop;
+- interpretar o diagrama da solução;
+- executar o laboratório proposto;
+- registrar o resultado no GitHub.
 
-## Laboratório
+---
 
-Criar funções para manipulação de dados de produtos, clientes, pedidos e usuários.
+## 1. Conceitos
 
-## Resultado esperado
+### 1. Arrow Functions
 
-Ao final da semana, o aluno deverá:
+Oferecem sintaxe concisa e comportamento específico de `this`.
 
-- compreender os conceitos principais;
-- aplicar os conhecimentos em um exercício prático;
-- registrar a evolução no GitHub;
-- relacionar o conteúdo com as etapas anteriores do roadmap.
+### 2. Template Literals
 
-## Próximo passo
+Facilitam interpolação e construção de strings.
 
-Continue para a próxima semana do roadmap.
+### 3. Destructuring
+
+Extrai propriedades de objetos e posições de arrays.
+
+### 4. Spread
+
+Expande arrays ou objetos e facilita criação de novas estruturas imutáveis.
+
+### 5. Rest
+
+Agrupa argumentos ou propriedades restantes.
+
+### 6. Métodos de arrays
+
+`map`, `filter`, `find`, `some`, `every` e `reduce` são essenciais para transformação de dados.
+
+---
+
+## 2. Estudo de Caso — NexusShop
+
+O código inicial do carrinho possui loops imperativos e mutações. A equipe quer tornar as transformações mais declarativas.
+
+### O que devemos observar
+
+O foco do estudo de caso não é apenas implementar uma solução, mas entender **por que** determinada técnica é utilizada, quais problemas ela resolve e como se conecta às demais etapas do roadmap.
+
+---
+
+## 3. Diagrama
+
+```mermaid
+flowchart LR
+    A[Array original] --> B[filter]
+    B --> C[map]
+    C --> D[reduce]
+    D --> E[Resultado]
+    A -. sem mutação .-> E
+```
+
+---
+
+## 4. Laboratório
+
+### Objetivo do laboratório
+
+Aplicar os conceitos da semana em uma evolução prática da NexusShop.
+
+### Passo a passo
+
+1. Reescreva o cálculo do carrinho usando `reduce`.
+2. Use `filter` para obter produtos disponíveis.
+3. Use `map` para criar uma representação simplificada.
+4. Use destructuring nos parâmetros das funções.
+5. Atualize um objeto usando spread, sem mutar o original.
+6. Crie mensagens utilizando template literals.
+
+### Evidências esperadas
+
+- código versionado;
+- commits relacionados à atividade;
+- documentação quando aplicável;
+- captura de tela ou link quando a atividade envolver interface;
+- README atualizado quando houver mudança importante na forma de executar o projeto.
+
+### Entrega
+
+Refatoração de `cart-calculator.js` utilizando JavaScript moderno.
+
+---
+
+## 5. Perguntas para revisão
+
+1. Qual problema principal os conceitos desta semana resolvem?
+2. Qual é o erro mais comum ao aplicar esses conceitos?
+3. Como o conteúdo desta semana se conecta à semana anterior?
+4. Como você explicaria a solução implementada para outro desenvolvedor?
+5. O que mudaria em um projeto real de maior escala?
+
+---
+
+## 6. Checklist da semana
+
+- [ ] Estudei os conceitos.
+- [ ] Entendi o estudo de caso.
+- [ ] Interpretei o diagrama Mermaid.
+- [ ] Executei o laboratório.
+- [ ] Registrei as evidências no GitHub.
+- [ ] Revisei os principais aprendizados.
 
 ---
 

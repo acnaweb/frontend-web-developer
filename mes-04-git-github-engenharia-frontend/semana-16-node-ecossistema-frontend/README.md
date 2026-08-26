@@ -1,39 +1,122 @@
-# Semana 16 — Node.js e Ecossistema Frontend
+# Semana 16 — Node.js, npm e Vite
 
-## Objetivo
+## Objetivos
 
-Estudar e praticar os fundamentos relacionados a **Node.js e Ecossistema Frontend**, conectando o conteúdo ao desenvolvimento progressivo da carreira de Frontend Web Developer.
+Compreender o ecossistema de build do frontend e utilizar um gerenciador de pacotes e dev server.
 
-## Tópicos
+Ao final desta semana, você deverá ser capaz de:
 
-- Node.js;
-- npm;
-- npx;
-- package.json;
-- dependencies;
-- devDependencies;
-- scripts;
-- Semantic Versioning;
-- Vite;
-- Babel;
-- esbuild;
+- explicar os principais conceitos com suas próprias palavras;
+- relacionar os conceitos ao estudo de caso da NexusShop;
+- interpretar o diagrama da solução;
+- executar o laboratório proposto;
+- registrar o resultado no GitHub.
 
-## Laboratório
+---
 
-Criar um projeto frontend com Vite e compreender o ciclo de instalação, desenvolvimento e build.
+## 1. Conceitos
 
-## Resultado esperado
+### 1. Node.js
 
-Ao final da semana, o aluno deverá:
+Runtime JavaScript utilizado por grande parte das ferramentas de desenvolvimento frontend.
 
-- compreender os conceitos principais;
-- aplicar os conhecimentos em um exercício prático;
-- registrar a evolução no GitHub;
-- relacionar o conteúdo com as etapas anteriores do roadmap.
+### 2. npm
 
-## Próximo passo
+Gerenciador de pacotes e scripts.
 
-Continue para a próxima semana do roadmap.
+### 3. package.json
+
+Manifesto do projeto com metadados, scripts e dependências.
+
+### 4. dependencies
+
+Pacotes necessários em runtime.
+
+### 5. devDependencies
+
+Pacotes utilizados principalmente no desenvolvimento e build.
+
+### 6. Vite
+
+Ferramenta moderna que oferece servidor de desenvolvimento e processo de build.
+
+### 7. Semantic Versioning
+
+Modelo `MAJOR.MINOR.PATCH` para comunicar compatibilidade de versões.
+
+---
+
+## 2. Estudo de Caso — NexusShop
+
+A NexusShop precisa migrar de arquivos estáticos executados diretamente no navegador para uma estrutura moderna que futuramente receberá React.
+
+### O que devemos observar
+
+O foco do estudo de caso não é apenas implementar uma solução, mas entender **por que** determinada técnica é utilizada, quais problemas ela resolve e como se conecta às demais etapas do roadmap.
+
+---
+
+## 3. Diagrama
+
+```mermaid
+flowchart LR
+    A[Source Code] --> V[Vite Dev Server]
+    V --> B[Browser]
+    A --> BUILD[npm run build]
+    BUILD --> DIST[dist/]
+    DIST --> HOST[Hospedagem]
+```
+
+---
+
+## 4. Laboratório
+
+### Objetivo do laboratório
+
+Aplicar os conceitos da semana em uma evolução prática da NexusShop.
+
+### Passo a passo
+
+1. Confirme a instalação do Node.js.
+2. Crie um projeto com Vite.
+3. Analise o `package.json`.
+4. Execute `npm install` e observe `node_modules` e lockfile.
+5. Crie scripts adicionais simples.
+6. Execute o servidor de desenvolvimento.
+7. Execute o build e analise a pasta `dist`.
+
+### Evidências esperadas
+
+- código versionado;
+- commits relacionados à atividade;
+- documentação quando aplicável;
+- captura de tela ou link quando a atividade envolver interface;
+- README atualizado quando houver mudança importante na forma de executar o projeto.
+
+### Entrega
+
+NexusShop executando por meio do Vite.
+
+---
+
+## 5. Perguntas para revisão
+
+1. Qual problema principal os conceitos desta semana resolvem?
+2. Qual é o erro mais comum ao aplicar esses conceitos?
+3. Como o conteúdo desta semana se conecta à semana anterior?
+4. Como você explicaria a solução implementada para outro desenvolvedor?
+5. O que mudaria em um projeto real de maior escala?
+
+---
+
+## 6. Checklist da semana
+
+- [ ] Estudei os conceitos.
+- [ ] Entendi o estudo de caso.
+- [ ] Interpretei o diagrama Mermaid.
+- [ ] Executei o laboratório.
+- [ ] Registrei as evidências no GitHub.
+- [ ] Revisei os principais aprendizados.
 
 ---
 

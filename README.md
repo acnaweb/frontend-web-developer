@@ -66,6 +66,27 @@ Frontend Web Developer
 
 Cada semana possui seu próprio diretório com um `README.md`.
 
+## Metodologia
+
+Cada semana possui quatro blocos principais:
+
+1. **Conceitos** — fundamentos necessários para compreender o tema;
+2. **Estudo de caso** — aplicação do conhecimento na NexusShop;
+3. **Diagrama Mermaid** — representação visual da arquitetura, fluxo ou comportamento;
+4. **Laboratório** — prática guiada com entrega versionada no GitHub.
+
+## Estudo de Caso do Roadmap — NexusShop
+
+Ao longo do roadmap utilizaremos a **NexusShop**, uma aplicação fictícia de comércio eletrônico, como estudo de caso contínuo.
+
+A aplicação evoluirá gradualmente:
+
+```text
+Ideia → UX → Figma → HTML/CSS → JavaScript → React → API → Testes → CI/CD → Deploy
+```
+
+O objetivo é permitir que cada conceito estudado seja aplicado em um produto coerente, em vez de exercícios isolados.
+
 ## Estrutura do repositório
 
 ```text
